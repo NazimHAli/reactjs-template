@@ -29,7 +29,7 @@ function Gallery(): JSX.Element {
       <Grid
         container
         spacing={{ xs: 2, md: 3 }}
-        columns={{ xs: 1, sm: 8, md: 12 }}
+        columns={{ xs: 2, sm: 8, md: 12 }}
       >
         <GalleryList loading={loading} users={users} />
       </Grid>
