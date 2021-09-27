@@ -2,12 +2,12 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import "./style/base.scss";
 
-const TopComp = React.lazy(() => import("./components/TopComp"));
+const Gallery = React.lazy(() => import("./components/Gallery"));
 
 ReactDOM.render(
   <div>
-    <React.Suspense fallback={<div>Index Loading...</div>}>
-      <TopComp />
+    <React.Suspense fallback={<div>...</div>}>
+      <Gallery />
     </React.Suspense>
   </div>,
   document.getElementById("root")
