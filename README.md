@@ -2,7 +2,7 @@
 
 ReactJS starter template/boilerplate using a modern build process with WebPack 5 in TypeScript.
 
-[![Webpack Build](https://github.com/NazimAli2017/reactjs-template/actions/workflows/nodejs.yml/badge.svg?branch=master)](https://github.com/NazimAli2017/reactjs-template/actions/workflows/nodejs.yml)
+[![Webpack Build](https://github.com/NazimHAli/reactjs-template/actions/workflows/nodejs.yml/badge.svg?branch=master)](https://github.com/NazimHAli/reactjs-template/actions/workflows/nodejs.yml)
 
 ## Quick start
 
