@@ -3,6 +3,7 @@
 ReactJS starter template/boilerplate using a modern build process with WebPack 5 in TypeScript. All the components are currently functional components, recommend reading about them here [ReactJS Doc](https://reactjs.org/docs/components-and-props.html#function-and-class-components). One of the primary goals of this repo is to incorporate all the main concepts of ReactJS.
 
 [![Webpack Build](https://github.com/NazimHAli/reactjs-template/actions/workflows/nodejs.yml/badge.svg?branch=master)](https://github.com/NazimHAli/reactjs-template/actions/workflows/nodejs.yml)
+[![CodeQL](https://github.com/NazimHAli/reactjs-template/actions/workflows/codeql-analysis.yml/badge.svg?branch=master&event=push)](https://github.com/NazimHAli/reactjs-template/actions/workflows/codeql-analysis.yml)
 
 [![Dependecy Status](https://david-dm.org/NazimHAli/reactjs-template.svg)](https://david-dm.org/NazimHAli/reactjs-template)  
 [![devDependencies Status](https://david-dm.org/NazimHAli/reactjs-template/dev-status.svg)](https://david-dm.org/NazimHAli/reactjs-template?type=dev)
