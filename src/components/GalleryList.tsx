@@ -1,6 +1,8 @@
+import React from "react";
+
 import { Grid } from "@mui/material";
 import { array, bool } from "prop-types";
-import React from "react";
+
 import { GalleryListItem } from "./GalleryListItem";
 import LoadingSkeleton from "./LoadingSkeleton";
 const User = React.lazy(() => import("./User"));

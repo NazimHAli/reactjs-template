@@ -1,8 +1,8 @@
 import React from "react";
-import { getUsers } from "../services/getUsers";
-
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
+
+import { getUsers } from "../services/getUsers";
 import GalleryList from "./GalleryList";
 
 function Gallery(): JSX.Element {

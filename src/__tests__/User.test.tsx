@@ -3,55 +3,40 @@ import User from "../components/User";
 import { render, screen, waitFor } from "@testing-library/react";
 
 describe("User", () => {
-  let listElement;
-  const users = [
-    {
-      name: {
-        first: "Anakin",
-        last: "Skywalker",
-      },
-      picture: {
-        thumbnail: "as-thumb.webp",
-      },
+  let testElement;
+  const user = {
+    name: {
+      first: "Anakin",
+      last: "Skywalker",
     },
-    {
-      name: {
-        first: "Darth",
-        last: "Vader",
-      },
-      picture: {
-        thumbnail: "dv-thumb.webp",
-      },
+    picture: {
+      thumbnail: "as-thumb.webp",
     },
-  ];
+  };
 
   beforeEach(async () => {
     render(
-      <ol data-testid="users-ol">
-        {Array.from(users).map((user, index) => (
-          <User user={user} key={index} />
-        ))}
+      <ol data-testid="user">
+        <User user={user} key={0} />
       </ol>
     );
 
     // Wait for child component to lazyload
     await waitFor(() =>
       expect(screen.getAllByRole("img")[0].getAttribute("srcset")).toBe(
-        users[0].picture.thumbnail
+        user.picture.thumbnail
       )
     );
-    listElement = screen.getByTestId("users-ol");
+    testElement = screen.getByTestId("user");
   });
 
   test("renders ordered list", () => {
-    expect(listElement.querySelectorAll("li").length).toEqual(users.length);
+    expect(testElement.querySelectorAll("li").length).toEqual(1);
   });
 
-  test("renders users", () => {
-    users.map((user) => {
-      expect(listElement.textContent).toContain(
-        `${user.name.first} ${user.name.last}`
-      );
-    });
+  test("single user element", () => {
+    expect(testElement.textContent).toContain(
+      `${user.name.first} ${user.name.last}`
+    );
   });
 });

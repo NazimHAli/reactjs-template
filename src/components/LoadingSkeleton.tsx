@@ -1,7 +1,8 @@
+import React from "react";
+
 import { Skeleton } from "@mui/material";
 import { Box } from "@mui/system";
 import { number } from "prop-types";
-import React from "react";
 
 function LoadingSkeleton({ index }) {
   return (

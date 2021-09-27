@@ -1,7 +1,8 @@
 import * as React from "react";
+import { any } from "prop-types";
+
 import "../style/list.scss";
 const Thumbnail = React.lazy(() => import("./Thumbnail"));
-import { any } from "prop-types";
 
 function User({ user }): JSX.Element {
   return (
