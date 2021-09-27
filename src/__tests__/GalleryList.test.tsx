@@ -11,7 +11,7 @@ describe("GalleryList", () => {
         last: "Skywalker",
       },
       picture: {
-        thumbnail: "as-thumb.webp",
+        large: "as-thumb.webp",
       },
     },
     {
@@ -20,7 +20,7 @@ describe("GalleryList", () => {
         last: "Vader",
       },
       picture: {
-        thumbnail: "dv-thumb.webp",
+        large: "dv-thumb.webp",
       },
     },
   ];
@@ -35,7 +35,7 @@ describe("GalleryList", () => {
     // Wait for child components to lazyload
     await waitFor(() =>
       expect(screen.getAllByRole("img")[0].getAttribute("srcset")).toBe(
-        users[0].picture.thumbnail
+        users[0].picture.large
       )
     );
 

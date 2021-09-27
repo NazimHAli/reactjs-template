@@ -10,7 +10,7 @@ describe("User", () => {
       last: "Skywalker",
     },
     picture: {
-      thumbnail: "as-thumb.webp",
+      large: "as-thumb.webp",
     },
   };
 
@@ -24,7 +24,7 @@ describe("User", () => {
     // Wait for child component to lazyload
     await waitFor(() =>
       expect(screen.getAllByRole("img")[0].getAttribute("srcset")).toBe(
-        user.picture.thumbnail
+        user.picture.large
       )
     );
     testElement = screen.getByTestId("user");
