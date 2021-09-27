@@ -8,7 +8,7 @@ ReactJS starter template/boilerplate using a modern build process with WebPack 5
 [![Dependecy Status](https://david-dm.org/NazimHAli/reactjs-template.svg)](https://david-dm.org/NazimHAli/reactjs-template)  
 [![devDependencies Status](https://david-dm.org/NazimHAli/reactjs-template/dev-status.svg)](https://david-dm.org/NazimHAli/reactjs-template?type=dev)
 
-#### Initial version - renders a list of random users using the Random User Generator.
+#### Initial version - renders a list of random users using the [RandomAPI/Randomuser.me-Node](https://github.com/RandomAPI/Randomuser.me-Node).
 
 ![image](https://user-images.githubusercontent.com/26750288/134839866-e10ca422-545c-4492-91db-a98159a2fd0c.png)
 
