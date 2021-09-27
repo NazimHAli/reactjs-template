@@ -16,9 +16,11 @@ describe("User", () => {
 
   beforeEach(async () => {
     render(
-      <ol data-testid="user">
-        <User user={user} key={0} />
-      </ol>
+      <div data-testid="user">
+        <React.Suspense fallback={<p>loading</p>}>
+          <User user={user} key={0} />
+        </React.Suspense>
+      </div>
     );
 
     // Wait for child component to lazyload
@@ -28,10 +30,6 @@ describe("User", () => {
       )
     );
     testElement = screen.getByTestId("user");
-  });
-
-  test("renders ordered list", () => {
-    expect(testElement.querySelectorAll("li").length).toEqual(1);
   });
 
   test("single user element", () => {

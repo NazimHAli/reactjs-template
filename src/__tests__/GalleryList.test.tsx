@@ -28,7 +28,9 @@ describe("GalleryList", () => {
   beforeEach(async () => {
     render(
       <div data-testid="gallery">
-        <GalleryList loading={false} users={users} />
+        <React.Suspense fallback={<p>loading</p>}>
+          <GalleryList loading={false} users={users} />
+        </React.Suspense>
       </div>
     );
 
