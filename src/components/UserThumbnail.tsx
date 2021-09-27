@@ -6,7 +6,7 @@ function UserThumbnail({ image }): JSX.Element {
 }
 
 UserThumbnail.propTypes = {
-  image: string
+  image: string,
 };
 
 export default UserThumbnail;

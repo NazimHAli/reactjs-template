@@ -1,9 +1,8 @@
 import React from "react";
-import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 
 import { getUsers } from "../services/getUsers";
-import GalleryList from "./GalleryList";
+const GalleryList = React.lazy(() => import("./GalleryList"));
 
 function Gallery(): JSX.Element {
   const [loading, setLoading] = React.useState(false);
@@ -25,15 +24,13 @@ function Gallery(): JSX.Element {
   }, []);
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <Grid
-        container
-        spacing={{ xs: 2, md: 3 }}
-        columns={{ xs: 2, sm: 8, md: 12 }}
-      >
-        <GalleryList loading={loading} users={users} />
-      </Grid>
-    </Box>
+    <Grid
+      container
+      spacing={{ xs: 2, md: 3 }}
+      columns={{ xs: 2, sm: 8, md: 12 }}
+    >
+      <GalleryList loading={loading} users={users} />
+    </Grid>
   );
 }
 

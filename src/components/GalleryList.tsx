@@ -9,7 +9,7 @@ const User = React.lazy(() => import("./User"));
 
 function GalleryList({ loading, users }) {
   return (
-    <React.Suspense fallback={<div>Users Loading...</div>}>
+    <React.Fragment>
       {Array.from(loading ? Array(10) : users).map((user, index) => (
         <Grid item xs={1} sm={2} md={3} key={index}>
           <GalleryListItem>
@@ -17,7 +17,7 @@ function GalleryList({ loading, users }) {
           </GalleryListItem>
         </Grid>
       ))}
-    </React.Suspense>
+    </React.Fragment>
   );
 }
 

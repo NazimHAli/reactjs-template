@@ -6,14 +6,12 @@ const UserThumbnail = React.lazy(() => import("./UserThumbnail"));
 
 function User({ user }): JSX.Element {
   return (
-    <li>
+    <React.Fragment>
       <p>
         {user.name.title} {user.name.first} {user.name.last}
       </p>
-      <React.Suspense fallback={<div>Loading...</div>}>
-        <UserThumbnail image={user.picture.large} />
-      </React.Suspense>
-    </li>
+      <UserThumbnail image={user.picture.large} />
+    </React.Fragment>
   );
 }
 
