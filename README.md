@@ -29,7 +29,8 @@ yarn serve
 -   ReactJS with TypeScript
 -   WebPack 5
 -   Lazy loading & code splitting
--   GitHub actions - build and unit tests
+-   Uses random user generator https://randomuser.me/
+-   GitHub actions - build and run unit tests
 
 ## TODO
 
