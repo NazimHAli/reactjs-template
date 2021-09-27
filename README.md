@@ -4,6 +4,8 @@ ReactJS starter template/boilerplate using a modern build process with WebPack 5
 
 [![Webpack Build](https://github.com/NazimHAli/reactjs-template/actions/workflows/nodejs.yml/badge.svg?branch=master)](https://github.com/NazimHAli/reactjs-template/actions/workflows/nodejs.yml)
 
+#### Initial version - renders a list of random users using the Random User Generator.
+
 ![image](https://user-images.githubusercontent.com/26750288/134839866-e10ca422-545c-4492-91db-a98159a2fd0c.png)
 
 
