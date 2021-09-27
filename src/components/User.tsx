@@ -3,17 +3,6 @@ import "../style/list.scss";
 const Thumbnail = React.lazy(() => import("./Thumbnail"));
 import { any } from "prop-types";
 
-declare interface UserInt {
-  name: {
-    first: string,
-    last: string,
-    title: string
-  },
-  picture: {
-    thumbnail: string
-  }
-}
-
 function User({ user }): JSX.Element {
   return (
     <li>
