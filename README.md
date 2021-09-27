@@ -39,6 +39,7 @@ yarn serve
 -   WebPack 5
 -   Lazy loading & code splitting
 -   Uses random user generator https://randomuser.me/
+-   [Material UI](https://github.com/mui-org/material-ui)
 -   GitHub actions - build and run unit tests
 
 ## TODO
