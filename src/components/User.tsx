@@ -11,7 +11,7 @@ function User({ user }): JSX.Element {
         {user.name.title} {user.name.first} {user.name.last}
       </p>
       <React.Suspense fallback={<div>Loading...</div>}>
-        <Thumbnail image={user.picture.thumbnail} />
+        <Thumbnail image={user.picture.large} />
       </React.Suspense>
     </li>
   );
