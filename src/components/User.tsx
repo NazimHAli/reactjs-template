@@ -2,7 +2,7 @@ import * as React from "react";
 import { any } from "prop-types";
 
 import "../style/list.scss";
-const Thumbnail = React.lazy(() => import("./Thumbnail"));
+const UserThumbnail = React.lazy(() => import("./UserThumbnail"));
 
 function User({ user }): JSX.Element {
   return (
@@ -11,7 +11,7 @@ function User({ user }): JSX.Element {
         {user.name.title} {user.name.first} {user.name.last}
       </p>
       <React.Suspense fallback={<div>Loading...</div>}>
-        <Thumbnail image={user.picture.large} />
+        <UserThumbnail image={user.picture.large} />
       </React.Suspense>
     </li>
   );

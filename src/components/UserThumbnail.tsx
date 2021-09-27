@@ -1,12 +1,12 @@
 import React from "react";
 import { string } from "prop-types";
 
-function Thumbnail({ image }): JSX.Element {
+function UserThumbnail({ image }): JSX.Element {
   return <img srcSet={image} loading="lazy" />;
 }
 
-Thumbnail.propTypes = {
+UserThumbnail.propTypes = {
   image: string
 };
 
-export default Thumbnail;
+export default UserThumbnail;
