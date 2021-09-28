@@ -4,7 +4,7 @@ import * as ReactDOM from "react-dom";
 import "./style/base.scss";
 
 const BaseContainer = React.lazy(() => import("./components/BaseContainer"));
-const Gallery = React.lazy(() => import("./components/Gallery"));
+const Gallery = React.lazy(() => import("./components/gallery/Gallery"));
 
 const container = <Gallery />;
 

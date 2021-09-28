@@ -1,7 +1,6 @@
 import React from "react";
-import Grid from "@mui/material/Grid";
 
-import { getUsers } from "../services/getUsers";
+import { getUsers } from "../../services/getUsers";
 const GalleryList = React.lazy(() => import("./GalleryList"));
 
 function Gallery(): JSX.Element {
@@ -12,7 +11,7 @@ function Gallery(): JSX.Element {
     const loadUsers = async () => {
       setLoading(true);
 
-      getUsers(20).then((res) => {
+      getUsers(100).then((res) => {
         // Simulate slow load
         setTimeout(() => {
           setUsers(res);
@@ -23,15 +22,7 @@ function Gallery(): JSX.Element {
     loadUsers();
   }, []);
 
-  return (
-    <Grid
-      container
-      spacing={{ xs: 2, md: 3 }}
-      columns={{ xs: 2, sm: 8, md: 12 }}
-    >
-      <GalleryList loading={loading} users={users} />
-    </Grid>
-  );
+  return <GalleryList users={users} loading={loading} />;
 }
 
 export default Gallery;

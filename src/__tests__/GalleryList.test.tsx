@@ -1,5 +1,5 @@
 import React from "react";
-import GalleryList from "../components/GalleryList";
+import GalleryList from "../components/gallery/GalleryList";
 import { render, screen, waitFor } from "@testing-library/react";
 
 describe("GalleryList", () => {
